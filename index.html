@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bricks Breaking Game</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 420px;
+        }
+
+        canvas{
+            background-color: #eeeeeeae;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        button {
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="newGameButton">Yeni Oyun</button>
+        <canvas onclick="oyunuBaslat()" id="game" width="480" height="320"></canvas>
+    </div>
+   
+    <script src="./script.js"></script>
+</body>
+</html>
